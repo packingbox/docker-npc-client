@@ -5,7 +5,7 @@ WORKDIR /
 ENV NPC_VERSION 0.26.8
 
 RUN set -x && \
-	wget --no-check-certificate https://github.com/cnlh/nps/releases/download/v${NPC_VERSION}/linux_amd64_client.tar.gz && \ 
+	wget --no-check-certificate https://github.com/ehang-io/nps/releases/download/v${NPC_VERSION}/linux_amd64_client.tar.gz && \ 
 	mkdir \npc && \
 	mv linux_amd64_client* /npc && \
 	cd /npc && \
